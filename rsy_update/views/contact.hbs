@@ -43,7 +43,7 @@
 
         <div class="row">
 
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d120570.20465977481!2d72.76830114489975!3d19.20311090250111!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3be7b79aa48af03f%3A0x2774dc07ae67d029!2sSHOP%20NO%209%2C%20ABHINAV%20APARTMENT%20CHS%20LTD%2C%20CHHATRAPATI%2C%20Shivaji%20Rd%2C%20opp.%20Atul%20Tower%2C%20Tribhuvan%20Chawl%2C%20Hemu%20Colony%2C%20Bhagat%20Colony%2C%20Kandivali%20West%2C%20Mumbai%2C%20Maharashtra%20400067!3m2!1d19.203124199999998!2d72.83834159999999!5e0!3m2!1sen!2sin!4v1676971811665!5m2!1sen!2sin" 
+            <iframe class="map" src="" 
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
             <form  name="submit-to-google-sheet" >
@@ -74,28 +74,7 @@
 
   
   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbyetEIfJSPP8xrntlJSWW-MK1uvP2G2kezhpyKQ36Gyo9KheZvyshRIVmtyn8oyQp2wlg/exec'
-    const form = document.forms['submit-to-google-sheet']
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response =>{
-    
-    msg.innerHTML =  'Message sent sucessfully'
-    setTimeout (function(){
 
-        msg.innerHTML=''
-
-
-    },3000)
-    form.reset()
-
-
-
-})
-        .catch(error => console.error('Error!', error.message))
-    })
   </script>
 
 
